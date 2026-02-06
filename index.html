@@ -1,53 +1,157 @@
-<!DOCTYPE html><html lang="id">
+<!DOCTYPE html>
+<html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FIZZO PRIVATE SERVER</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
   font-family:'Poppins',sans-serif;
-}body{ background:#05070d; color:white; display:flex; justify-content:center; align-items:center; min-height:100vh; }
+}
 
-.container{ width:95%; max-width:420px; text-align:center; padding:25px; border-radius:18px; background:rgba(255,255,255,0.05); backdrop-filter:blur(12px); box-shadow:0 0 30px rgba(0,255,255,0.15); }
+body{
+  background:#081122;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+}
 
-/* Floating profile */ .profile{ width:130px; height:130px; border-radius:50%; object-fit:cover; border:3px solid #00ffe5; margin:auto; animation:float 3s ease-in-out infinite; box-shadow:0 0 20px #00ffe5; }
+/* Container utama */
+.container{
+  width:95%;
+  max-width:420px;
+  text-align:center;
+  padding:25px;
+}
 
-@keyframes float{ 0%{transform:translateY(0px);} 50%{transform:translateY(-12px);} 100%{transform:translateY(0px);} }
+/* Badge status & version */
+.badge{
+  display:inline-block;
+  background:#0f1d33;
+  padding:10px 18px;
+  border-radius:30px;
+  margin:6px;
+  font-weight:600;
+  font-size:14px;
+  box-shadow:0 0 12px rgba(0,255,255,0.15);
+}
 
-h1{ margin-top:15px; font-size:22px; letter-spacing:1px; color:#00ffe5; text-shadow:0 0 10px #00ffe5,0 0 20px #00ffe5; }
+.online{
+  color:#00ff9d;
+}
 
-.version{ margin-top:6px; font-size:14px; opacity:0.8; }
+.version{
+  color:#6fb3ff;
+}
 
-.status{ margin-top:8px; font-weight:600; color:#00ff6a; animation:blink 1s infinite; }
+/* Judul */
+h1{
+  margin-top:20px;
+  font-size:26px;
+  font-weight:700;
+}
 
-@keyframes blink{ 0%{opacity:1;} 50%{opacity:0.3;} 100%{opacity:1;} }
+h1 span{
+  background:linear-gradient(90deg,#1aa3ff,#00ffe5);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
 
-.desc{ margin-top:14px; font-size:14px; line-height:1.5; opacity:0.9; }
+/* Deskripsi */
+.desc{
+  margin-top:14px;
+  font-size:14px;
+  opacity:0.85;
+  line-height:1.5;
+}
 
-.buttons{ margin-top:20px; display:flex; flex-direction:column; gap:12px; }
+/* Tombol */
+.buttons{
+  margin-top:25px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
 
-.btn{ text-decoration:none; padding:12px; border-radius:12px; color:white; font-weight:600; background:#00ffe5; color:#000; transition:0.3s; box-shadow:0 0 12px #00ffe5; }
+.btn{
+  text-decoration:none;
+  padding:15px;
+  border-radius:14px;
+  font-weight:600;
+  font-size:15px;
+  transition:0.3s;
+}
 
-.btn:hover{ transform:translateY(-2px); box-shadow:0 0 20px #00ffe5; }
+/* tombol utama */
+.btn-download{
+  background:linear-gradient(90deg,#1aa3ff,#00ffe5);
+  color:#001c20;
+  box-shadow:0 0 20px rgba(0,255,255,0.4);
+}
 
-footer{ margin-top:18px; font-size:12px; opacity:0.6; }
+.btn-secondary{
+  background:#14233c;
+  color:white;
+  border:1px solid rgba(255,255,255,0.1);
+}
 
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+/* Footer */
+footer{
+  margin-top:20px;
+  font-size:12px;
+  opacity:0.6;
+}
 </style>
+
 </head>
-<body><div class="container">  <!-- CUSTOM IMAGE -->  <!-- Ganti profile.jpg dengan gambar milikmu -->  <img src="img/887d6b9f-6cca-4651-9540-2e8074491eec_980x980.png" class="profile" alt="Profile">  <h1>FIZZO PRIVATE SERVER</h1>  <div class="version">VER: 2.118.12</div>
-  <div class="status">• STATUS: ONLINE</div>  <p class="desc">
+<body>
+
+<div class="container">
+
+  <div class="badge online">● STATUS: ONLINE</div><br>
+  <div class="badge version">VER: 2.118.12</div>
+
+  <h1>FIZZO <span>PRIVATE SERVER</span></h1>
+
+  <p class="desc">
     Download the latest Private Server APK. The ultimate modded experience
-    with unlimited resources competitive ranking, and premium anti-ban
-    protection.
-  </p>  <div class="buttons">
-    <a href="https://www.mediafire.com/file/ttgpsapjq6fc7pk/FF_KIPAS_VIP_PERMANEN_OB52.apk/file?dkey=0vb7fdam96i&r=268" class="btn">DOWNLOAD APK</a>
-    <a href="https://www.unlockffbeta.com" class="btn">VERIFY ID</a>
-    <a href="https://www.dash.unlockffbeta.com" class="btn">ACCESS PANEL</a>
-  </div>  <footer>
+    with unlimited resources, competitive ranking, and premium anti-ban protection.
+  </p>
+
+  <div class="buttons">
+    <a href="https://www.mediafire.com/file/ttgpsapjq6fc7pk/FF_KIPAS_VIP_PERMANEN_OB52.apk/file?dkey=0vb7fdam96i&r=268"
+       class="btn btn-download">
+       ⬇ DOWNLOAD APK (251 MB)
+    </a>
+
+    <a href="https://www.unlockffbeta.com"
+       class="btn btn-secondary">
+       🪪 VERIFY ID
+    </a>
+
+    <a href="https://www.dash.unlockffbeta.com"
+       class="btn btn-secondary">
+       👤 ACCESS PANEL
+    </a>
+  </div>
+
+  <footer>
     © 2026 FIZZO PRIVATE SERVER
-  </footer></div></body>
+  </footer>
+
+</div>
+
+</body>
 </html>
